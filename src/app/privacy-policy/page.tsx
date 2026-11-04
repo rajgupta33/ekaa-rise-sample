@@ -47,7 +47,7 @@ export default function PrivacyPolicyPage() {
           <section className="space-y-2">
             <h2 className="font-display font-bold text-lg text-ink">2. Categories of Information Collected</h2>
             <p>
-              We collect information necessary to deliver educational guidance and schedule the AED 100 psychometric assessment:
+              We collect information necessary to deliver educational guidance and schedule the psychometric assessment:
             </p>
             <ul className="list-disc pl-5 space-y-1 text-muted">
               <li>Candidate and Guardian names and contact identifiers (email, telephone).</li>

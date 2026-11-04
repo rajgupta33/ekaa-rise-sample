@@ -13,7 +13,7 @@ export const faqData: FAQItem[] = [
     category: "pricing",
     categoryLabel: "Pricing & Offer",
     question: "What is the EKAA Rise Psychometric Test price in Dubai?",
-    answer: "The EKAA Rise psychometric test is confirmed at AED 100. The exact assessment format, delivery method and included reporting services will be confirmed directly during the initial booking conversation before any payment is processed.",
+    answer: "Your assessment fee is shown at the final booking review, after you enter student and contact details and before any payment. The exact assessment format, delivery method and included reporting services will be confirmed directly during the initial booking conversation before any payment is processed.",
     relevantLinks: [{ label: "Book Psychometric Test", href: "/book-psychometric-test" }],
   },
   {
@@ -29,7 +29,7 @@ export const faqData: FAQItem[] = [
     category: "psychometric",
     categoryLabel: "Psychometric Assessment",
     question: "Is a psychometric test the same as career counselling?",
-    answer: "Not exactly. A psychometric assessment provides structured diagnostic information from a standardised instrument; counselling interprets that data in conversation to explore realistic options and make decisions. Whether 1-on-1 counselling is bundled with the AED 100 test fee depends on the confirmed booking package.",
+    answer: "Not exactly. A psychometric assessment provides structured diagnostic information from a standardised instrument; counselling interprets that data in conversation to explore realistic options and make decisions. Whether 1-on-1 counselling is bundled with the test fee depends on the confirmed booking package.",
     relevantLinks: [{ label: "Career Counselling in Dubai", href: "/career-counselling-dubai" }],
   },
   {

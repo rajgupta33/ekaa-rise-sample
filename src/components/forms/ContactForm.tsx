@@ -10,7 +10,7 @@ export function ContactForm() {
     name: "",
     email: "",
     phone: "",
-    topic: "Psychometric Assessment (AED 100)",
+    topic: "Psychometric Assessment",
     message: "",
   });
 
@@ -96,7 +96,7 @@ export function ContactForm() {
           onChange={(e) => setFormData({ ...formData, topic: e.target.value })}
           className="w-full px-3.5 py-3 rounded-xl border border-border text-sm text-ink bg-white focus:outline-none focus:ring-2 focus:ring-teal/40"
         >
-          <option>Psychometric Assessment (AED 100)</option>
+          <option>Psychometric Assessment</option>
           <option>Subject Selection (IB / A Levels / CBSE / AP)</option>
           <option>Career Counselling in Dubai</option>
           <option>Study Abroad Admissions (Undergraduate)</option>

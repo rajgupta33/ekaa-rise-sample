@@ -499,7 +499,7 @@ export function PsychometricOrbit() {
                 href="/book-psychometric-test"
                 className="text-ink hover:text-teal transition-colors font-mono text-[11px]"
               >
-                Book for AED 100 →
+                Book for →
               </Link>
             </div>
           </div>

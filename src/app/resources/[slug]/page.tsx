@@ -1,3 +1,4 @@
+import { ReadingTools } from "@/components/interior/ReadingTools";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -139,8 +140,10 @@ export default function ArticleDetailPage({ params }: ArticlePageProps) {
 
       {/* Article Body */}
       <div className="shell max-w-3xl mx-auto space-y-8 font-sans">
+        <ReadingTools headings={article.sections.map(s => s.heading)} />
+        <div id="article-content" className="article-reading-body">
         {article.sections.map((sec, idx) => (
-          <section key={idx} className="space-y-4">
+          <section key={idx} id={`article-section-${idx}`} tabIndex={-1} className="space-y-4">
             <h2 className="font-display font-extrabold text-xl sm:text-2xl text-ink tracking-tight">
               {sec.heading}
             </h2>
@@ -170,14 +173,15 @@ export default function ArticleDetailPage({ params }: ArticlePageProps) {
           </section>
         ))}
 
-        {/* In-Article Promotion Card: AED 100 Test */}
+        </div>
+        {/* In-Article Promotion Card: Test */}
         <div className="p-6 sm:p-8 rounded-3xl bg-ink text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-elevated my-10">
           <div className="space-y-1 text-center sm:text-left">
             <span className="text-[10px] font-mono uppercase tracking-widest text-teal-soft font-bold block">
               Direct Application
             </span>
             <h3 className="font-display font-bold text-xl text-white">
-              EKAA Rise Psychometric Assessment · AED 100
+              EKAA Rise Psychometric Assessment
             </h3>
             <p className="text-xs text-ivory/70 max-w-md">
               Translate the principles in this article into objective data for your student.
@@ -187,7 +191,7 @@ export default function ArticleDetailPage({ params }: ArticlePageProps) {
             href="/book-psychometric-test"
             className="inline-flex items-center gap-2 bg-teal hover:bg-teal-soft text-white font-bold text-xs px-5 py-3 rounded-full transition-colors flex-shrink-0"
           >
-            <span>Book for AED 100</span>
+            <span>Book your assessment</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>

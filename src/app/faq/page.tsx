@@ -1,3 +1,4 @@
+import { PageHero } from "@/components/hero/PageHero";
 import React from "react";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -8,12 +9,12 @@ import { constructMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = constructMetadata({
   title: "Psychometric Test & Study Abroad FAQs | EKAA Rise",
-  description: "Answers about EKAA Rise's AED 100 psychometric test, subject selection, international admissions and parent questions.",
+  description: "Answers about EKAA Rise's psychometric test, subject selection, international admissions and parent questions.",
   canonicalPath: "/faq",
   keywords: [
     "psychometric test Dubai FAQ",
     "study abroad questions Dubai",
-    "AED 100 test price questions",
+    "test price questions",
   ],
 });
 
@@ -26,21 +27,10 @@ export default function FAQPage() {
       </div>
 
       {/* Header */}
-      <section className="shell text-center max-w-3xl mx-auto space-y-3">
-        <div className="inline-flex items-center gap-2 text-xs font-mono font-extrabold uppercase tracking-widest text-teal">
-          <HelpCircle className="w-3.5 h-3.5" />
-          <span>Knowledge & Answers</span>
-        </div>
-        <h1 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-ink tracking-tight">
-          Frequently Asked Questions About EKAA Rise
-        </h1>
-        <p className="text-sm sm:text-base text-muted max-w-xl mx-auto leading-relaxed">
-          Transparent answers regarding our confirmed AED 100 psychometric test, Dubai school curricula, overseas university admissions, and family privacy.
-        </p>
-      </section>
+      <PageHero eyebrow="A LITTLE MORE CLARITY" title="Good questions." titleItalic="Thoughtful answers." lead="Search by topic or explore the questions students and families ask most often." imageSrc="/images/ekaa/articles/psychometric-guide.webp" primaryCta={{label:"Explore the answers",href:"#questions"}} secondaryCta={{label:"Explore student assessment",href:"/career-assessment"}} />
 
       {/* Accordion with filters */}
-      <section className="shell max-w-3xl mx-auto">
+      <section id="questions" className="shell max-w-3xl mx-auto">
         <FAQAccordion showCategoryFilters={true} />
       </section>
 

@@ -1,3 +1,4 @@
+import { ServiceExplorer } from "@/components/interior/ServiceExplorer";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -42,9 +43,9 @@ export default function CareerCounsellingPage() {
       {/* Hero */}
       <PageHero
         eyebrow="STUDENT CAREER GUIDANCE IN DUBAI"
-        title="Career Counselling for Students in Dubai —"
-        titleItalic="Beyond a Single Score"
-        lead="Make sense of your emerging interests, academic choices, and future possibilities with personalized guidance that looks deeply at the person, not just an algorithm."
+        title="Your interests. Your possibilities."
+        titleItalic="Find your direction."
+        lead="Make sense of your interests and explore the paths that could fit you."
         imageSrc="/images/ekaa/career-counselling.webp"
         imageAlt="Student and counsellor in a warm discussion in Dubai"
         primaryCta={{
@@ -52,11 +53,13 @@ export default function CareerCounsellingPage() {
           href: "/book-consultation",
         }}
         secondaryCta={{
-          label: "Start with AED 100 Assessment",
+          label: "Start with Assessment",
           href: "/book-psychometric-test",
         }}
         curriculaBadges={true}
       />
+      <ServiceExplorer kind="career" />
+      <details className="interior-deep"><summary>Explore the full guidance and frequently asked questions</summary><div className="interior-deep-content">
 
       {/* 2. Common Student Dilemmas (Question-Led Cards) */}
       <section className="shell space-y-6">
@@ -128,7 +131,7 @@ export default function CareerCounsellingPage() {
               {
                 step: "01",
                 title: "Diagnostic Discovery",
-                desc: "Reviewing student hobbies, school performance, extracurricular commitments, and findings from our AED 100 psychometric assessment.",
+                desc: "Reviewing student hobbies, school performance, extracurricular commitments, and findings from our psychometric assessment.",
               },
               {
                 step: "02",
@@ -175,6 +178,7 @@ export default function CareerCounsellingPage() {
           <FAQAccordion initialCategory="counselling" limit={5} />
         </div>
       </section>
+      </div></details>
     </div>
   );
 }

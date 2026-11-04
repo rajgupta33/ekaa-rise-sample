@@ -59,7 +59,7 @@ export function CurriculumTabs() {
             href="/book-psychometric-test"
             className="inline-flex items-center gap-2 bg-teal hover:bg-teal-dark text-white text-xs font-bold px-4 py-2.5 rounded-full transition-colors flex-shrink-0"
           >
-            <span>Align with AED 100 Test</span>
+            <span>Align with Test</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>

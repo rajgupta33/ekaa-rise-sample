@@ -33,14 +33,14 @@ export const siteConfig: SiteConfig = {
   shortName: "EKAA",
   tagline: "Discover Your Strengths. Design Your Future.",
   subline: "Psychometric assessment and personalised education pathways for students in Dubai — from finding academic direction to exploring universities abroad.",
-  description: "Dubai-focused psychometric assessment (AED 100), career counselling, subject-selection guidance and overseas university admissions for IB, British, American and CBSE students.",
+  description: "Dubai-focused psychometric assessment, career counselling, subject-selection guidance and overseas university admissions for IB, British, American and CBSE students.",
   location: "Dubai, United Arab Emirates",
   primaryPrice: {
     amount: 100,
     currency: "AED",
     formatted: "AED 100",
     label: "EKAA Rise Psychometric Test",
-    priceNotice: "Confirmed public price. Exact assessment scope, format, and reporting details will be confirmed directly prior to live processing.",
+    priceNotice: "Assessment fee is shown after the student profile and contact details, at final review before checkout.",
   },
   contact: {
     locationServed: "Serving students and families across Dubai, UAE",

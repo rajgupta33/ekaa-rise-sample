@@ -1,3 +1,4 @@
+import { InteriorFrame } from "@/components/interior/InteriorFrame";
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { SiteHeader } from "@/components/layout/SiteHeader";
@@ -25,7 +26,7 @@ export const metadata: Metadata = constructMetadata({
     "study abroad consultants in Dubai",
     "subject selection counselling Dubai",
     "EKAA Rise Dubai",
-    "AED 100 psychometric assessment",
+    "psychometric assessment",
   ],
 });
 
@@ -54,7 +55,7 @@ export default function RootLayout({
         <MotionScrollRail />
         <PreviewBanner />
         <SiteHeader />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1"><InteriorFrame>{children}</InteriorFrame></main>
         <MobileBottomCTA />
         <SiteFooter />
       </body>

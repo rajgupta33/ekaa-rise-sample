@@ -7,7 +7,7 @@ import { constructMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = constructMetadata({
   title: "Refund & Cancellation Policy (Draft) | EKAA Rise",
-  description: "Draft cancellation and rescheduling framework for the AED 100 psychometric assessment and advisory sessions in Dubai.",
+  description: "Draft cancellation and rescheduling framework for the psychometric assessment and advisory sessions in Dubai.",
   canonicalPath: "/refund-and-cancellation-policy",
 });
 
@@ -45,7 +45,7 @@ export default function RefundPolicyPage() {
           <section className="space-y-2">
             <h2 className="font-display font-bold text-lg text-ink">2. Proposed Rescheduling Framework</h2>
             <p>
-              Families who have booked an AED 100 psychometric assessment or personal guidance session may request rescheduling up to 24 hours prior to the scheduled appointment without penalty.
+              Families who have booked an psychometric assessment or personal guidance session may request rescheduling up to 24 hours prior to the scheduled appointment without penalty.
             </p>
           </section>
 

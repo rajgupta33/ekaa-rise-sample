@@ -1,3 +1,4 @@
+import { ServiceExplorer } from "@/components/interior/ServiceExplorer";
 import React from "react";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -43,9 +44,9 @@ export default function MastersAdmissionsPage() {
       {/* Hero */}
       <PageHero
         eyebrow="POSTGRADUATE ADMISSIONS IN DUBAI"
-        title="Master's & Postgraduate Admissions Guidance from Dubai —"
-        titleItalic="Accelerate Your Trajectory"
-        lead="Find an advanced degree that connects your undergraduate academic record and professional aspirations with world-class international universities."
+        title="Go deeper."
+        titleItalic="Reach further."
+        lead="Explore postgraduate study that connects with your experience and what you want to do next."
         imageSrc="/images/ekaa/hero-study-abroad.webp"
         imageAlt="Postgraduate applicant reviewing university master's programmes in Dubai"
         primaryCta={{
@@ -57,6 +58,8 @@ export default function MastersAdmissionsPage() {
           href: "/study-abroad-consultants-dubai",
         }}
       />
+      <ServiceExplorer kind="masters" />
+      <details className="interior-deep"><summary>Explore the full guidance and frequently asked questions</summary><div className="interior-deep-content">
 
       {/* 2. Key Pillars of Postgraduate Applications */}
       <section className="shell">
@@ -147,6 +150,7 @@ export default function MastersAdmissionsPage() {
       <section className="shell max-w-2xl mx-auto">
         <ConsultationForm />
       </section>
+      </div></details>
     </div>
   );
 }

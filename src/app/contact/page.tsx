@@ -1,3 +1,4 @@
+import { PageHero } from "@/components/hero/PageHero";
 import React from "react";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -10,7 +11,7 @@ import { constructMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = constructMetadata({
   title: "Contact EKAA Rise Dubai | Assessment & Admissions Enquiries",
-  description: "Ask about the AED 100 psychometric test, career guidance, subject selection or international university admissions in Dubai.",
+  description: "Ask about the psychometric test, career guidance, subject selection or international university admissions in Dubai.",
   canonicalPath: "/contact",
   keywords: [
     "contact EKAA Rise Dubai",
@@ -28,21 +29,10 @@ export default function ContactPage() {
       </div>
 
       {/* Header */}
-      <section className="shell text-center max-w-3xl mx-auto space-y-3">
-        <div className="inline-flex items-center gap-2 text-xs font-mono font-extrabold uppercase tracking-widest text-teal">
-          <Mail className="w-3.5 h-3.5" />
-          <span>Get in Touch</span>
-        </div>
-        <h1 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-ink tracking-tight">
-          Contact EKAA Rise in Dubai
-        </h1>
-        <p className="text-sm sm:text-base text-muted max-w-xl mx-auto leading-relaxed">
-          Have questions regarding the AED 100 psychometric assessment, school subject selection, or international university admissions? Our team is here to assist.
-        </p>
-      </section>
+      <PageHero eyebrow="LET’S START A CONVERSATION" title="A question today." titleItalic="A clearer tomorrow." lead="Tell us what you are exploring. We can help you find a useful next step." imageSrc="/images/ekaa/career-counselling.webp" primaryCta={{label:"Prepare my enquiry",href:"#enquiry"}} secondaryCta={{label:"Explore student assessment",href:"/career-assessment"}} />
 
       {/* Grid: Details + Contact Form */}
-      <section className="shell">
+      <section id="enquiry" className="shell">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Information Column */}
           <div className="lg:col-span-5 space-y-6">
@@ -98,13 +88,13 @@ export default function ContactPage() {
                   Quick Booking
                 </span>
                 <p>
-                  To register immediately for the <strong>AED 100 psychometric test</strong>, use our dedicated booking journey.
+                  To register immediately for the <strong>psychometric test</strong>, use our dedicated booking journey.
                 </p>
                 <Link
                   href="/book-psychometric-test"
                   className="inline-flex items-center gap-1 text-teal font-bold hover:underline pt-1"
                 >
-                  <span>Go to Assessment Booking (AED 100)</span>
+                  <span>Go to Assessment Booking</span>
                   <ArrowRight className="w-3 h-3" />
                 </Link>
               </div>

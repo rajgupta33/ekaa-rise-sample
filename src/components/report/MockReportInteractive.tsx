@@ -49,7 +49,7 @@ export function MockReportInteractive() {
             href="/book-psychometric-test"
             className="inline-flex items-center gap-1.5 bg-ink hover:bg-teal text-white text-xs font-bold px-4 py-2.5 rounded-full transition-colors shadow-sm"
           >
-            <span>Book Psychometric Test — AED 100</span>
+            <span>Book Psychometric Test</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>
@@ -261,13 +261,13 @@ export function MockReportInteractive() {
       {/* Report Footer */}
       <div className="p-4 sm:p-6 bg-ivory-warm border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="text-xs text-muted text-center sm:text-left">
-          Ready to experience structured self-discovery? <strong>AED 100 psychometric assessment</strong>.
+          Ready to experience structured self-discovery? <strong>psychometric assessment</strong>.
         </div>
         <Link
           href="/book-psychometric-test"
           className="inline-flex items-center gap-2 bg-ink hover:bg-teal text-white text-xs font-bold px-5 py-2.5 rounded-full transition-colors"
         >
-          <span>Book Psychometric Test — AED 100</span>
+          <span>Book Psychometric Test</span>
           <ArrowRight className="w-3.5 h-3.5" />
         </Link>
       </div>

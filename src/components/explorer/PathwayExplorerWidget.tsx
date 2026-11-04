@@ -38,13 +38,13 @@ export function PathwayExplorerWidget() {
       return {
         title: "Curriculum Subject Selection + Diagnostic Assessment",
         summary: `As a ${stage === "grades-8-10" ? "Grade 8–10 student" : "student selecting subjects"} in the ${curriculum.toUpperCase()} curriculum, high-stakes decisions like Math HL vs SL or A Level choices dictate university prerequisites.`,
-        recommendedService: "EKAA Rise Psychometric Test (AED 100) + Subject Selection Guidance",
+        recommendedService: "EKAA Rise Psychometric Test + Subject Selection Guidance",
         primaryAction: {
           label: "Explore Subject Selection Guide",
           href: "/subject-selection-counselling-dubai",
         },
         secondaryAction: {
-          label: "Book AED 100 Psychometric Test",
+          label: "Book Psychometric Test",
           href: "/book-psychometric-test",
         },
       };
@@ -71,9 +71,9 @@ export function PathwayExplorerWidget() {
     return {
       title: "Self-Discovery & Career Aptitude Assessment",
       summary: "Start with structured objective data regarding your vocational interests and cognitive aptitudes before narrowing down university courses.",
-      recommendedService: "EKAA Rise Psychometric Test (AED 100)",
+      recommendedService: "EKAA Rise Psychometric Test",
       primaryAction: {
-        label: "Book Psychometric Test — AED 100",
+        label: "Book Psychometric Test",
         href: "/book-psychometric-test",
       },
       secondaryAction: {

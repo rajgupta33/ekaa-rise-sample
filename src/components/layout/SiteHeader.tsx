@@ -59,7 +59,7 @@ export function SiteHeader() {
   return (
     <header
       ref={headerRef}
-      className={`sticky top-0 z-40 border-b transition-[background-color,box-shadow,padding] duration-200 ${
+      className={`${pathname.startsWith('/career-assessment') ? 'relative' : 'sticky top-0'} z-40 border-b transition-[background-color,box-shadow,padding] duration-200 ${
         isScrolled
           ? "border-[#D7DCD6] bg-[#FFFCF7]/95 py-2 shadow-sm backdrop-blur-md"
           : "border-[#D7DCD6]/70 bg-[#FFFCF7]/95 py-2.5 backdrop-blur-sm"
@@ -147,7 +147,6 @@ export function SiteHeader() {
             className="book-test-cta group relative inline-flex min-h-[42px] max-w-[176px] items-center justify-center overflow-hidden rounded-full bg-[#123841] px-3 py-2 text-center text-[11px] font-bold leading-tight text-white shadow-[0_6px_18px_rgba(16,36,43,.22)] transition-[transform,background-color,box-shadow] duration-200 hover:-translate-y-0.5 hover:bg-[#176C70] hover:shadow-[0_10px_25px_rgba(23,108,112,.28)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-[#176C70] sm:max-w-none sm:px-4 sm:text-xs xl:min-h-[46px] xl:px-5 xl:text-[13px]"
           >
             <span className="relative z-10">Book Psychometric Test</span>
-            <span className="relative z-10 ml-2 hidden rounded-full border border-white/25 bg-white/10 px-2 py-1 text-[10px] font-semibold text-[#E2F3E9] xl:inline">AED 100</span>
             <ArrowRight className="relative z-10 ml-1.5 hidden h-4 w-4 transition-transform duration-200 group-hover:translate-x-1 xl:inline" aria-hidden="true" />
           </Link>
 

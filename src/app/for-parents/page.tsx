@@ -1,3 +1,4 @@
+import { ServiceExplorer } from "@/components/interior/ServiceExplorer";
 import React from "react";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -38,21 +39,23 @@ export default function ForParentsPage() {
       {/* Hero */}
       <PageHero
         eyebrow="SUPPORTING YOUR CHILD'S FUTURE"
-        title="Career and University Guidance for Parents in Dubai —"
-        titleItalic="Clarity Without Pressure"
-        lead="Help your child make informed academic choices without deciding for them. Objective testing and structured guidance turn anxiety into constructive family collaboration."
+        title="Their future."
+        titleItalic="Your support."
+        lead="Help your child explore possibilities with confidence, curiosity, and a little less pressure."
         imageSrc="/images/ekaa/hero-parents.webp"
         imageAlt="Parent and teenager discussing education plans at home in Dubai"
         primaryCta={{
-          label: "Explore the AED 100 Test",
+          label: "Explore the Test",
           href: "/book-psychometric-test",
         }}
         secondaryCta={{
           label: "Request Family Consultation",
           href: "/book-consultation",
         }}
-        showPricePill={true}
+        showPricePill={false}
       />
+      <ServiceExplorer kind="parents" />
+      <details className="interior-deep"><summary>Explore the full guidance and frequently asked questions</summary><div className="interior-deep-content">
 
       {/* 2. Common Parent Concerns */}
       <section className="shell space-y-6">
@@ -73,7 +76,7 @@ export default function ForParentsPage() {
             {
               title: "Academic Indecision",
               desc: "Your child excels across several subjects but cannot settle on a clear university major or future vocation.",
-              solution: "Our AED 100 psychometric test clarifies underlying cognitive patterns to identify viable degree clusters.",
+              solution: "Our psychometric test clarifies underlying cognitive patterns to identify viable degree clusters.",
             },
             {
               title: "Peer & Trend Pressure",
@@ -173,14 +176,14 @@ export default function ForParentsPage() {
           Empower Your Child's Journey
         </h3>
         <p className="text-xs sm:text-sm text-muted">
-          Begin with our confirmed AED 100 psychometric test or request a family consultation with an EKAA Rise advisor.
+          Begin with our confirmed psychometric test or request a family consultation with an EKAA Rise advisor.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
           <Link
             href="/book-psychometric-test"
             className="inline-flex items-center gap-2 bg-ink hover:bg-teal text-white font-bold text-xs sm:text-sm px-6 py-3.5 rounded-full transition-colors shadow-sm"
           >
-            <span>Book Assessment — AED 100</span>
+            <span>Book Assessment</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
           <Link
@@ -191,6 +194,7 @@ export default function ForParentsPage() {
           </Link>
         </div>
       </section>
+      </div></details>
     </div>
   );
 }

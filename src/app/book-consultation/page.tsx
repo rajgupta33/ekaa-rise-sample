@@ -1,3 +1,4 @@
+import { PageHero } from "@/components/hero/PageHero";
 import React from "react";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -26,21 +27,10 @@ export default function BookConsultationPage() {
       </div>
 
       {/* Header */}
-      <section className="shell text-center max-w-3xl mx-auto space-y-3">
-        <div className="inline-flex items-center gap-2 text-xs font-mono font-extrabold uppercase tracking-widest text-teal">
-          <Compass className="w-3.5 h-3.5" />
-          <span>One-on-One Advisory</span>
-        </div>
-        <h1 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-ink tracking-tight">
-          Book a Personal Guidance Conversation
-        </h1>
-        <p className="text-sm sm:text-base text-muted max-w-xl mx-auto leading-relaxed">
-          Tell us about your current academic curriculum, emerging questions, or target university destinations. We will schedule a personalized conversation.
-        </p>
-      </section>
+      <PageHero eyebrow="GUIDANCE THAT STARTS WITH YOU" title="Your questions." titleItalic="Our starting point." lead="Share your stage, interests and goals to prepare for a guidance conversation." imageSrc="/images/ekaa/hero-parents.webp" primaryCta={{label:"Share my goals",href:"#consultation"}} secondaryCta={{label:"Explore student assessment",href:"/career-assessment"}} />
 
       {/* Form */}
-      <section className="shell">
+      <section id="consultation" className="shell">
         <ConsultationForm />
       </section>
 
@@ -53,7 +43,7 @@ export default function BookConsultationPage() {
           href="/book-psychometric-test"
           className="inline-flex items-center gap-2 text-xs font-bold text-teal hover:underline"
         >
-          <span>Book EKAA Rise Psychometric Test (AED 100)</span>
+          <span>Book EKAA Rise Psychometric Test</span>
           <ArrowRight className="w-3.5 h-3.5" />
         </Link>
       </section>

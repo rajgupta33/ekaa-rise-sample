@@ -100,13 +100,6 @@ export function generateServiceSchema() {
       "@type": "Place",
       name: "Dubai, United Arab Emirates",
     },
-    offers: {
-      "@type": "Offer",
-      price: siteConfig.primaryPrice.amount.toString(),
-      priceCurrency: siteConfig.primaryPrice.currency,
-      availability: "https://schema.org/InStock",
-      url: `${siteUrl}/book-psychometric-test`,
-    },
   };
 }
 

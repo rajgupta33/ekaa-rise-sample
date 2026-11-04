@@ -17,7 +17,7 @@ export function PreviewBanner() {
       <div className="shell flex items-center justify-between gap-3 text-[10px] leading-tight sm:text-[11px]">
         <div className="flex min-w-0 items-center gap-2">
           <span className="h-1.5 w-1.5 flex-none rounded-full bg-[#B87955]" aria-hidden="true" />
-          <span className="truncate font-medium">Preview site · forms are demos; no payment is taken</span>
+          <span className="truncate font-medium">Preview site · career explorer works locally; booking forms and payments are demos</span>
         </div>
         <div className="flex flex-shrink-0 items-center gap-3">
           <Link

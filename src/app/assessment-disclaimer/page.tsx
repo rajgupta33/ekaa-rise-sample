@@ -35,7 +35,7 @@ export default function AssessmentDisclaimerPage() {
           <section className="space-y-2">
             <h2 className="font-display font-bold text-lg text-ink">1. Educational & Reflective Purpose</h2>
             <p>
-              The EKAA Rise Psychometric Test (AED 100) is administered strictly as an educational self-reflection and guidance instrument. It is designed to evaluate general cognitive aptitudes, vocational interest affinities (such as Holland RIASEC categories), and study environment preferences.
+              The EKAA Rise Psychometric Test is administered strictly as an educational self-reflection and guidance instrument. It is designed to evaluate general cognitive aptitudes, vocational interest affinities (such as Holland RIASEC categories), and study environment preferences.
             </p>
           </section>
 

@@ -1,3 +1,4 @@
+import { ServiceExplorer } from "@/components/interior/ServiceExplorer";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -39,21 +40,23 @@ export default function AboutPage() {
       {/* Hero */}
       <PageHero
         eyebrow="OUR PHILOSOPHY & STORY"
-        title="About EKAA Rise: Guidance That Starts With"
-        titleItalic="Understanding"
-        lead="EKAA Rise brings together student discovery, academic decision-making, and international education planning under one considered approach. We believe good guidance starts by understanding the learner — not by pushing a predetermined course or university."
+        title="A future built"
+        titleItalic="around you."
+        lead="We start with the student: their interests, their questions, and the possibilities ahead."
         imageSrc="/images/ekaa/career-counselling.webp"
         imageAlt="Advisory session representing EKAA Rise education values"
         primaryCta={{
-          label: "Book Psychometric Test — AED 100",
+          label: "Book Psychometric Test",
           href: "/book-psychometric-test",
         }}
         secondaryCta={{
           label: "Contact Advisory Team",
           href: "/contact",
         }}
-        showPricePill={true}
+        showPricePill={false}
       />
+      <ServiceExplorer kind="about" />
+      <details className="interior-deep"><summary>Explore the full guidance and frequently asked questions</summary><div className="interior-deep-content">
 
       {/* 2. Four Core Values */}
       <section className="shell space-y-6">
@@ -81,7 +84,7 @@ export default function AboutPage() {
             {
               icon: ShieldCheck,
               title: "Rigorous Transparency",
-              desc: "Clear public pricing (AED 100 test), honest prerequisite audits, and no false admission guarantees.",
+              desc: "Clear fees before payment, honest prerequisite audits, and no false admission guarantees.",
             },
             {
               icon: Users,
@@ -123,7 +126,7 @@ export default function AboutPage() {
               <span className="font-mono font-bold text-sm text-teal">Phase 1</span>
               <h3 className="font-display font-bold text-base text-ink">Discover the Individual</h3>
               <p className="text-xs text-muted leading-relaxed">
-                Using our AED 100 assessment, we establish a reliable baseline of vocational interests, spatial logic, and cognitive velocity.
+                Using our assessment, we establish a reliable baseline of vocational interests, spatial logic, and cognitive velocity.
               </p>
             </div>
 
@@ -167,6 +170,7 @@ export default function AboutPage() {
           </Link>
         </div>
       </section>
+      </div></details>
     </div>
   );
 }

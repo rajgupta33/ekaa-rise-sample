@@ -1,3 +1,4 @@
+import { ServiceExplorer } from "@/components/interior/ServiceExplorer";
 import React from "react";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -41,13 +42,13 @@ export default function SubjectSelectionPage() {
       {/* Hero */}
       <PageHero
         eyebrow="DUBAI CURRICULUM STRATEGY"
-        title="Subject Selection Counselling in Dubai —"
-        titleItalic="IB, A Levels, CBSE & AP"
-        lead="A strong subject choice is not simply the most difficult option. It is one that keeps realistic academic pathways open while reflecting the student's authentic capabilities and target degree prerequisites."
+        title="Make your subjects"
+        titleItalic="work together."
+        lead="Connect what you enjoy today with the courses you may want to study tomorrow."
         imageSrc="/images/ekaa/articles/subject-selection-guide.webp"
         imageAlt="Student and parent reviewing high school curriculum subject options in Dubai"
         primaryCta={{
-          label: "Align with AED 100 Test",
+          label: "Align with Test",
           href: "/book-psychometric-test",
         }}
         secondaryCta={{
@@ -56,6 +57,8 @@ export default function SubjectSelectionPage() {
         }}
         curriculaBadges={true}
       />
+      <ServiceExplorer kind="subjects" />
+      <details className="interior-deep"><summary>Explore the full guidance and frequently asked questions</summary><div className="interior-deep-content">
 
       {/* 2. Main Interactive Curriculum Explorer Component */}
       <section className="shell space-y-6">
@@ -191,14 +194,14 @@ export default function SubjectSelectionPage() {
           Need Guidance Navigating Subject Options?
         </h3>
         <p className="text-xs sm:text-sm text-muted">
-          Our AED 100 psychometric assessment provides the diagnostic baseline your family needs before finalizing high-stakes curriculum choices.
+          Our psychometric assessment provides the diagnostic baseline your family needs before finalizing high-stakes curriculum choices.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
           <Link
             href="/book-psychometric-test"
             className="inline-flex items-center gap-2 bg-ink hover:bg-teal text-white font-bold text-xs sm:text-sm px-6 py-3.5 rounded-full transition-colors shadow-sm"
           >
-            <span>Book Assessment — AED 100</span>
+            <span>Book Assessment</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
           <Link
@@ -209,6 +212,7 @@ export default function SubjectSelectionPage() {
           </Link>
         </div>
       </section>
+      </div></details>
     </div>
   );
 }

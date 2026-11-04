@@ -1,3 +1,4 @@
+import { ServiceExplorer } from "@/components/interior/ServiceExplorer";
 import React from "react";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -29,20 +30,22 @@ export default function OurProcessPage() {
       {/* Hero */}
       <PageHero
         eyebrow="THE EKAA METHODOLOGY"
-        title="A Thoughtful Path From Self-Discovery to"
-        titleItalic="Global Education"
-        lead="We connect diagnostic aptitude testing with high school subject decisions and international university applications under one cohesive, student-centred advisory process."
+        title="From a question"
+        titleItalic="to a next step."
+        lead="Explore how discovery, conversation and thoughtful planning come together."
         primaryCta={{
-          label: "Book Psychometric Test — AED 100",
+          label: "Book Psychometric Test",
           href: "/book-psychometric-test",
         }}
         secondaryCta={{
           label: "Discuss Admissions",
           href: "/book-consultation",
         }}
-        showPricePill={true}
+        showPricePill={false}
         variant="compact"
       />
+      <ServiceExplorer kind="process" />
+      <details className="interior-deep"><summary>Explore the full guidance and frequently asked questions</summary><div className="interior-deep-content">
 
       {/* Timeline Component */}
       <section className="shell">
@@ -55,14 +58,14 @@ export default function OurProcessPage() {
           Begin Your 5-Stage Journey Today
         </h3>
         <p className="text-xs sm:text-sm text-muted">
-          Start with our confirmed AED 100 psychometric assessment or talk directly with an admissions advisor.
+          Start with our confirmed psychometric assessment or talk directly with an admissions advisor.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
           <Link
             href="/book-psychometric-test"
             className="inline-flex items-center gap-2 bg-ink hover:bg-teal text-white font-bold text-xs sm:text-sm px-6 py-3.5 rounded-full transition-colors shadow-sm"
           >
-            <span>Book Assessment — AED 100</span>
+            <span>Book Assessment</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
           <Link
@@ -73,6 +76,7 @@ export default function OurProcessPage() {
           </Link>
         </div>
       </section>
+      </div></details>
     </div>
   );
 }

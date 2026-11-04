@@ -18,10 +18,16 @@ export const navigationConfig = {
       href: "/psychometric-test-dubai",
       items: [
         {
+          label: "Take the Student Assessment",
+          href: "/career-assessment",
+          description: "Grade-specific tests, personal results, and downloadable reports",
+          badge: "Start now",
+        },
+        {
           label: "Psychometric Test in Dubai",
           href: "/psychometric-test-dubai",
-          description: "Structured reflection on interests, aptitudes and direction — AED 100",
-          badge: "AED 100",
+          description: "Structured reflection on interests, aptitudes and direction",
+          badge: "Explore",
         },
         {
           label: "Illustrative Sample Report",
@@ -31,7 +37,7 @@ export const navigationConfig = {
         {
           label: "Book Psychometric Test",
           href: "/book-psychometric-test",
-          description: "Start your AED 100 assessment booking journey",
+          description: "Start your assessment booking journey",
           badge: "Popular",
         },
       ],
@@ -131,7 +137,7 @@ export const navigationConfig = {
         {
           label: "Frequently Asked Questions",
           href: "/faq",
-          description: "Clear answers on tests, AED 100 pricing, counselling & policies",
+          description: "Clear answers on tests, pricing, counselling & policies",
         },
       ],
     },
@@ -146,7 +152,7 @@ export const navigationConfig = {
   ],
   footerNav: {
     services: [
-      { label: "Psychometric Test (AED 100)", href: "/psychometric-test-dubai" },
+      { label: "Psychometric Test", href: "/psychometric-test-dubai" },
       { label: "Illustrative Sample Report", href: "/psychometric-test-dubai/sample-report" },
       { label: "Career Counselling in Dubai", href: "/career-counselling-dubai" },
       { label: "Subject Selection (IB/A Level/CBSE/AP)", href: "/subject-selection-counselling-dubai" },

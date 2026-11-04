@@ -1,3 +1,4 @@
+import { ServiceExplorer } from "@/components/interior/ServiceExplorer";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -46,9 +47,9 @@ export default function StudyAbroadHubPage() {
       {/* Hero */}
       <PageHero
         eyebrow="GLOBAL UNIVERSITY PLANNING FROM DUBAI"
-        title="Study Abroad Admissions Guidance from Dubai —"
-        titleItalic="Fit Over Rankings"
-        lead="A meaningful university shortlist begins with a deep understanding of the student. We guide families across course selection, prerequisites, strategic shortlists and international applications."
+        title="Your next chapter."
+        titleItalic="A wider world."
+        lead="Explore destinations, compare your priorities, and find a starting point for study abroad."
         imageSrc="/images/ekaa/hero-study-abroad.webp"
         imageAlt="Student exploring international university options in a modern library"
         primaryCta={{
@@ -61,6 +62,8 @@ export default function StudyAbroadHubPage() {
         }}
         curriculaBadges={true}
       />
+      <ServiceExplorer kind="abroad" />
+      <details className="interior-deep"><summary>Explore the full guidance and frequently asked questions</summary><div className="interior-deep-content">
 
       {/* 2. Degree Pathway Cards: UG & PG */}
       <section className="shell space-y-6">
@@ -232,6 +235,7 @@ export default function StudyAbroadHubPage() {
           <FAQAccordion initialCategory="admissions" limit={5} />
         </div>
       </section>
+      </div></details>
     </div>
   );
 }

@@ -63,7 +63,7 @@ export const articlesData: Record<string, Article> = {
         heading: "4. How Dubai Families Can Use Assessment Results Constructively",
         paragraphs: [
           "In Dubai's competitive academic environment, students often feel pressured by peer expectations or parental aspirations. A structured assessment offers neutral ground. When a student sees that their spatial and mechanical reasoning scores match their genuine love for design and problem-solving, it provides validation to explore architecture or industrial design alongside traditional engineering paths.",
-          "At EKAA Rise, our AED 100 psychometric assessment is designed as an accessible gateway into this self-discovery process, paired with experienced counselling to translate raw percentiles into actionable school subject and university pathways.",
+          "At EKAA Rise, our psychometric assessment is designed as an accessible gateway into this self-discovery process, paired with experienced counselling to translate raw percentiles into actionable school subject and university pathways.",
         ],
       },
     ],
@@ -199,7 +199,7 @@ export const articlesData: Record<string, Article> = {
           "Here is how a measured, low-stress preparation arc unfolds:",
         ],
         bulletPoints: [
-          "Grade 10 (Year 11): Cognitive & Interest Discovery. Take a comprehensive psychometric test (such as the AED 100 EKAA Rise assessment) to align academic strengths with Grade 11 subject choices.",
+          "Grade 10 (Year 11): Cognitive & Interest Discovery. Take a comprehensive psychometric test (such as the EKAA Rise assessment) to align academic strengths with Grade 11 subject choices.",
           "Grade 11 Autumn (Year 12): Initial Research & Testing Strategy. Review target countries (UK, US, Canada, Europe, Australia). Decide whether standardized tests (SAT/ACT, IELTS) are required.",
           "Grade 11 Spring / Summer: Shortlisting & Profile Deepening. Build a balanced 10–12 university shortlist (Dream, Target, Safety). Draft Common App personal statements and UCAS drafts.",
           "Grade 12 Autumn (Year 13): Deadlines & Submissions. October 15 for Oxbridge and Medicine; November 1–15 for US Early Decision/Early Action; January 1–15 for US Regular Decision and UCAS standard deadlines.",

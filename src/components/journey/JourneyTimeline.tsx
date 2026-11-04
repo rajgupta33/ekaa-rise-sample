@@ -28,9 +28,9 @@ export function JourneyTimeline() {
     {
       step: 2,
       title: "Discover via Assessment",
-      label: "Psychometric Testing · AED 100",
+      label: "Psychometric Testing",
       summary: "Administering a validated diagnostic tool evaluating cognitive aptitudes, vocational interests, and learning style preferences.",
-      details: "Our flagship AED 100 assessment provides structured, objective benchmarks rather than guesswork, capturing spatial, numerical, abstract, and verbal reasoning velocity alongside Holland vocational codes.",
+      details: "Our flagship assessment provides structured, objective benchmarks rather than guesswork, capturing spatial, numerical, abstract, and verbal reasoning velocity alongside Holland vocational codes.",
       icon: Sparkles,
       outcome: "Comprehensive candidate diagnostic data",
     },

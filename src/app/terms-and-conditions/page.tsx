@@ -43,9 +43,9 @@ export default function TermsAndConditionsPage() {
           </section>
 
           <section className="space-y-2">
-            <h2 className="font-display font-bold text-lg text-ink">2. Psychometric Test Fee (AED 100)</h2>
+            <h2 className="font-display font-bold text-lg text-ink">2. Psychometric Test Fee</h2>
             <p>
-              The confirmed public fee for the EKAA Rise Psychometric Test is AED 100. Prior to any financial charge, the precise assessment modality, testing duration, and reporting inclusions are fully disclosed. Applicable VAT and payment processing terms will be confirmed upon checkout integration.
+              The assessment fee is disclosed at the final booking review, after the student profile and contact details and before payment. Prior to any financial charge, the precise assessment modality, testing duration, and reporting inclusions are fully disclosed. Applicable VAT and payment processing terms will be confirmed upon checkout integration.
             </p>
           </section>
 

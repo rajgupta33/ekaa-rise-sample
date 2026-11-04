@@ -28,7 +28,7 @@ export function FAQAccordion({
 
   const categories = [
     { id: "all", label: "All Questions" },
-    { id: "pricing", label: "Pricing & AED 100" },
+    { id: "pricing", label: "Booking & Fees" },
     { id: "psychometric", label: "Psychometric Assessment" },
     { id: "counselling", label: "Curricula & Subjects" },
     { id: "admissions", label: "Study Abroad Admissions" },

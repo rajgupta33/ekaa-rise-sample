@@ -23,6 +23,7 @@ export function MobileBottomCTA() {
 
   // Hide on forms and checkout pages to avoid blocking inputs or submissions
   const hideOnPaths = [
+    "/career-assessment",
     "/book-psychometric-test",
     "/checkout-demo",
     "/book-consultation",
@@ -30,7 +31,7 @@ export function MobileBottomCTA() {
     "/thank-you",
   ];
 
-  if (hideOnPaths.includes(pathname) || (pathname === "/" && homepageHeroVisible)) {
+  if (pathname.startsWith('/career-assessment/') || hideOnPaths.includes(pathname) || (pathname === "/" && homepageHeroVisible)) {
     return null;
   }
 
@@ -42,7 +43,7 @@ export function MobileBottomCTA() {
             <Sparkles className="w-2.5 h-2.5 text-teal" /> Assessment Offer
           </span>
           <span className="text-xs font-bold text-ink">
-            Psychometric Test · <strong className="text-teal font-extrabold">AED 100</strong>
+            Discover your next chapter
           </span>
         </div>
         <Link

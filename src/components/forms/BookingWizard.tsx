@@ -48,7 +48,7 @@ export function BookingWizard() {
 
   const validateStep2 = () => {
     const errs: Record<string, string> = {};
-    if (!formData.email.trim() || !formData.email.includes("@")) {
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email.trim())) {
       errs.email = "Please enter a valid email address";
     }
     if (!formData.phone.trim() || formData.phone.length < 8) {
@@ -312,7 +312,7 @@ export function BookingWizard() {
                 onClick={handleNext}
                 className="flex-1 flex items-center justify-center gap-2 bg-ink hover:bg-teal text-white font-bold py-3.5 px-6 rounded-xl text-sm transition-colors shadow-sm"
               >
-                <span>Review Order — AED 100</span>
+                <span>Review my assessment</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>
@@ -410,10 +410,10 @@ export function BookingWizard() {
             </div>
             <div>
               <span className="text-xs font-mono uppercase tracking-wider text-teal font-extrabold block">
-                Confirmed Offer
+                PERSONALISED GUIDANCE
               </span>
               <h4 className="font-display font-extrabold text-base text-ink">
-                EKAA Rise Assessment · AED 100
+                Your next chapter starts here
               </h4>
             </div>
           </div>

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { 
   ChevronUp, 
   Sparkles, 
@@ -20,6 +21,7 @@ interface SectionLandmark {
 }
 
 export function MotionScrollRail() {
+  const pathname = usePathname();
   const [scrollProgress, setScrollProgress] = useState<number>(0);
   const [activeSection, setActiveSection] = useState<string>("hero");
   const [hoveredNode, setHoveredNode] = useState<string | null>(null);
@@ -28,11 +30,10 @@ export function MotionScrollRail() {
   const landmarks: SectionLandmark[] = [
     { id: "hero", label: "01 · Overview", shortLabel: "Home" },
     { id: "approach", label: "02 · The Approach", shortLabel: "Approach" },
-    { id: "orbit", label: "03 · Discovery Orbit", shortLabel: "Orbit" },
-    { id: "sample-report", label: "04 · Sample Report", shortLabel: "Report" },
+    { id: "discovery", label: "03 · Discover Yourself", shortLabel: "Discover" },
+    { id: "audiences", label: "04 · Your Chapter", shortLabel: "Your stage" },
     { id: "destinations", label: "05 · Destinations", shortLabel: "Abroad" },
     { id: "why-ekaa", label: "06 · Why EKAA", shortLabel: "Trust" },
-    { id: "faq", label: "07 · Clear FAQs", shortLabel: "FAQs" },
   ];
 
   // Track scroll percentage and current section
@@ -92,6 +93,7 @@ export function MotionScrollRail() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  if (pathname !== '/') return null;
   return (
     <>
       {/* ---------------- 1. TOP 3D KINETIC LASER PROGRESS BEAM ---------------- */}

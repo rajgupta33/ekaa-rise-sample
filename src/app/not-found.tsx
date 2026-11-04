@@ -34,7 +34,7 @@ export default function NotFound() {
           className="inline-flex items-center justify-center gap-2 bg-teal hover:bg-teal-dark text-white text-xs font-bold py-3 px-6 rounded-full transition-colors shadow-sm"
         >
           <Sparkles className="w-4 h-4" />
-          <span>Psychometric Test (AED 100)</span>
+          <span>Psychometric Test</span>
         </Link>
         <Link
           href="/study-abroad-consultants-dubai"

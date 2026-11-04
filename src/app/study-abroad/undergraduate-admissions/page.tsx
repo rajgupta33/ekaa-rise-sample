@@ -1,3 +1,4 @@
+import { ServiceExplorer } from "@/components/interior/ServiceExplorer";
 import React from "react";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -44,9 +45,9 @@ export default function UndergraduateAdmissionsPage() {
       {/* Hero */}
       <PageHero
         eyebrow="BACHELOR'S DEGREE ADMISSIONS"
-        title="Undergraduate Admissions Guidance for Students in Dubai —"
-        titleItalic="Strategic Roadmaps"
-        lead="Turn your school curriculum achievements, subject combinations, and personal interests into a practical, balanced international university application plan."
+        title="Your first degree."
+        titleItalic="Your own direction."
+        lead="Connect your interests with courses, campuses, and a considered application plan."
         imageSrc="/images/ekaa/hero-study-abroad.webp"
         imageAlt="High school student organizing university application documents"
         primaryCta={{
@@ -59,6 +60,8 @@ export default function UndergraduateAdmissionsPage() {
         }}
         curriculaBadges={true}
       />
+      <ServiceExplorer kind="undergraduate" />
+      <details className="interior-deep"><summary>Explore the full guidance and frequently asked questions</summary><div className="interior-deep-content">
 
       {/* 2. UK vs US vs Canada vs Australia Matrix */}
       <section className="shell">
@@ -135,7 +138,7 @@ export default function UndergraduateAdmissionsPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
             {[
-              { step: "01", title: "Diagnostic Profile", desc: "Aptitude testing (AED 100 test), curriculum audit and subject choice calibration in Grade 10." },
+              { step: "01", title: "Diagnostic Profile", desc: "Aptitude testing (test), curriculum audit and subject choice calibration in Grade 10." },
               { step: "02", title: "Country Research", desc: "Comparing university models, 3 vs 4 year degrees, living budgets and campus environments." },
               { step: "03", title: "Balanced Shortlist", desc: "Constructing a 10–12 university matrix categorized into Dream, Target, and Safety tiers." },
               { step: "04", title: "Application Craft", desc: "Drafting compelling personal statements, supplemental essays, and securing recommendation letters." },
@@ -157,6 +160,7 @@ export default function UndergraduateAdmissionsPage() {
       <section className="shell max-w-2xl mx-auto">
         <ConsultationForm />
       </section>
+      </div></details>
     </div>
   );
 }

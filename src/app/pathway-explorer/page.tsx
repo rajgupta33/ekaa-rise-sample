@@ -1,3 +1,4 @@
+import { PageHero } from "@/components/hero/PageHero";
 import React from "react";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -26,21 +27,10 @@ export default function PathwayExplorerPage() {
       </div>
 
       {/* Header */}
-      <section className="shell text-center max-w-3xl mx-auto space-y-3">
-        <div className="inline-flex items-center gap-2 text-xs font-mono font-extrabold uppercase tracking-widest text-teal">
-          <Compass className="w-3.5 h-3.5" />
-          <span>Interactive Guidance Tool</span>
-        </div>
-        <h1 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-ink tracking-tight">
-          Where Could Your Education Journey Begin?
-        </h1>
-        <p className="text-sm sm:text-base text-muted max-w-xl mx-auto leading-relaxed">
-          Take 90 seconds to answer four simple questions about your academic stage and goals to discover your recommended next step.
-        </p>
-      </section>
+      <PageHero eyebrow="FIND YOUR STARTING POINT" title="A few questions." titleItalic="A fresh direction." lead="Explore a useful next step through four short questions about your education and goals." imageSrc="/images/ekaa/hero-study-abroad.webp" primaryCta={{label:"Explore my path",href:"#explorer"}} secondaryCta={{label:"Explore student assessment",href:"/career-assessment"}} />
 
       {/* Widget */}
-      <section className="shell">
+      <section id="explorer" className="shell">
         <PathwayExplorerWidget />
       </section>
 
@@ -53,7 +43,7 @@ export default function PathwayExplorerPage() {
           href="/book-psychometric-test"
           className="inline-flex items-center gap-2 text-xs font-bold text-teal hover:underline"
         >
-          <span>Book EKAA Rise Psychometric Assessment (AED 100)</span>
+          <span>Book EKAA Rise Psychometric Assessment</span>
           <ArrowRight className="w-3.5 h-3.5" />
         </Link>
       </section>

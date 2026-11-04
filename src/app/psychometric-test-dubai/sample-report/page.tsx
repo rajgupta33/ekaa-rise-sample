@@ -98,17 +98,17 @@ export default function SampleReportPage() {
               Ready For Real Assessment?
             </span>
             <h2 className="font-display font-extrabold text-2xl sm:text-3xl text-white">
-              Book Your Student Assessment — AED 100
+              Book Your Student Assessment
             </h2>
             <p className="text-xs text-ivory/70 max-w-lg">
-              Start your journey today with our confirmed AED 100 psychometric assessment for Dubai students.
+              Start your journey today with our confirmed psychometric assessment for Dubai students.
             </p>
           </div>
           <Link
             href="/book-psychometric-test"
             className="inline-flex items-center gap-2 bg-teal hover:bg-teal-soft text-white font-bold text-xs sm:text-sm px-6 py-3.5 rounded-full transition-all flex-shrink-0"
           >
-            <span>Book Assessment — AED 100</span>
+            <span>Book Assessment</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
